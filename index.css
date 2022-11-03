@@ -551,6 +551,7 @@ a {
 footer {
   min-height: 50vh;
   background: #000;
+  padding: 10px 80px;
 }
 .footer-items {
   display: flex;
