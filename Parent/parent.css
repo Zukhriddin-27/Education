@@ -1,0 +1,119 @@
+.resources-page {
+  max-width: 1370px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.resources-page__header {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+}
+.resources-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  padding: 20px 40px;
+  margin-bottom: 5rem;
+}
+.resources-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #fff;
+  border-radius: 10px;
+  transition: all 0.3s;
+  padding: 40px;
+  transition: all 0.3s;
+}
+.resources-item:hover {
+  transform: translateY(-9px);
+}
+.resources-item__image img {
+  width: 100%;
+  object-fit: cover;
+}
+.resources-item__image {
+  padding: 20px 20px 0;
+}
+.resources-item__info {
+  padding: 10px 0 0;
+  height: 140px;
+  position: relative;
+}
+.resources-item__info h1 {
+  width: 100%;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.resources-item__info .bg-icon {
+  position: absolute;
+  bottom: -2rem;
+  font-weight: 300;
+}
+@media screen and (max-width: 1376px) {
+  .resources-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 40px;
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .resources-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px 10px;
+    margin-bottom: 5rem;
+  }
+  .resources-item {
+    padding: 20px;
+  }
+  .resources-item h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  .resources-item span {
+    font-size: 0.8rem;
+  }
+  .resources-item__info {
+    height: 115px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .resources-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .programs-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 60px;
+  }
+  .programs-item {
+    margin: 10px 40px;
+  }
+}
+@media screen and (max-width: 532px) {
+  .programs-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 60px;
+  }
+  .programs-item {
+    margin: 10px 20px;
+  }
+  .resources-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .resources-item {
+    padding: 40px;
+    margin: 10px 30px;
+  }
+  .resources-item__image {
+    padding: 10px;
+  }
+}

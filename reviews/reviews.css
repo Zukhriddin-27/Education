@@ -1,0 +1,143 @@
+.testimonial {
+  margin-bottom: 70px;
+  box-sizing: border-box;
+}
+.testimonial-header {
+  background-image: url(https://eduww.net/wp-content/uploads/2022/02/eduww-reviews.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin: 0;
+  min-height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.testimonial-header__text {
+  display: block;
+  width: 1370px;
+  margin: auto;
+  line-height: 1.2em;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+.testimonial-header__text h1 {
+  display: flex;
+  color: #0751da;
+  margin-top: 10rem;
+  align-items: baseline;
+}
+.testimonial-cart {
+  width: 1370px;
+  margin: auto;
+}
+.testimonial-cart__info {
+  padding: 30px 20px;
+  width: 1060px;
+  margin: auto;
+}
+.testimonial-cart__info p {
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.testimonial-cart__items {
+  width: 1160px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.testimonial-cart__item {
+  background: #fff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 10px 23px rgb(193 199 211);
+}
+
+.testimonial-cart__item p {
+  line-height: 1.5;
+}
+.testimonial-cart__item span {
+  display: block;
+  color: #0751da;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1376px) {
+  .testimonial-header__text {
+    margin-left: 50px;
+    width: auto;
+  }
+  .testimonial-cart {
+    width: auto;
+  }
+  .testimonial-cart__items {
+    width: auto;
+    margin: 10px;
+  }
+  .testimonial-cart__info {
+    width: auto;
+  }
+}
+@media screen and (max-width: 992px) {
+  .testimonial-cart__info {
+    padding: 20px 10px;
+    margin: auto;
+  }
+  .testimonial-cart__items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .testimonial-cart__item {
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .testimonial-header {
+    background-image: url(https://eduww.net/wp-content/uploads/2022/02/eduww-reviews.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0;
+    min-height: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .testimonial-header__text {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    align-content: center;
+  }
+  .testimonial-header__text h1 {
+    margin: 5rem 2rem;
+  }
+  .testimonial-cart__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .testimonial-cart__item {
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 532px) {
+  .testimonial-header {
+    margin: 0;
+    min-height: auto;
+  }
+  .testimonial-header__text {
+    font-size: 1.2rem;
+    align-content: center;
+  }
+  .testimonial-header__text h1 {
+    margin: 5rem 1rem;
+  }
+  .testimonial-cart__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .testimonial-cart__item {
+    padding: 10px 20px;
+    margin: 10px 20px;
+  }
+}

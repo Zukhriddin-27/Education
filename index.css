@@ -1,0 +1,1058 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  background-color: #e7ebf2;
+  color: #222222;
+}
+.header {
+  display: block;
+  background: #053b9e;
+  justify-content: center;
+}
+.active {
+  opacity: 0.6;
+}
+
+.header-contact {
+  background: #043186;
+  color: #d5effc;
+}
+.header-contact__items {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 10px 60px;
+  margin: 0;
+}
+.header-contact__item {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-right: 2rem;
+  list-style: none;
+  opacity: 0.7;
+  letter-spacing: 1px;
+}
+/* Navbar */
+.nav-link {
+  background: #053b9e;
+  position: sticky;
+  height: 80px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  z-index: 999;
+}
+.navbar {
+  display: inline-flex;
+  align-items: center;
+  height: 84px;
+  position: absolute;
+  right: 6rem;
+}
+.header-logo {
+  display: inline-flex;
+  color: #ffffff;
+  margin-left: 5rem;
+  margin-top: 1.2rem;
+}
+.navbar-icons img {
+  width: 50px;
+}
+/* .header-logo img {
+  margin-top: 1.3rem;
+} */
+.nav-list__items {
+  display: inline-flex;
+  align-items: center;
+  justify-items: end;
+  list-style: none;
+  margin: 0;
+  opacity: 1;
+  position: relative;
+}
+.navbar-icons {
+  opacity: 0;
+  position: absolute;
+}
+.nav-list__item a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #e7ebf2;
+  font-size: 0.9rem;
+  padding: 0px 20px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.nav-list__item:hover {
+  opacity: 0.6;
+}
+.nav-list__item:nth-child(7) {
+  background: #053b9e;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #d5effc;
+  padding: 0.7rem 0.8rem;
+  margin-left: 0.8rem;
+}
+
+.nav-list__item:nth-child(2):hover > ul {
+  left: auto;
+  opacity: 1;
+  transition-delay: 150ms;
+  pointer-events: auto;
+  height: auto;
+  overflow: visible;
+  background-color: #043b9e;
+}
+.nav-list__item:nth-child(2) ul {
+  display: block;
+  float: left;
+  position: absolute;
+  z-index: 99999;
+  text-align: left;
+  top: 5rem;
+  transition: opacity 80ms linear;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  background-color: #043b9e;
+  opacity: 0;
+  overflow: hidden;
+}
+.nav-list__item:nth-child(2) ul li {
+  padding: 19px 10px 19px 20px;
+  font-size: 14px;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  z-index: 1;
+  min-width: 160px;
+  background-color: #043186;
+  color: #fff;
+  padding: 10px;
+}
+.dropdown-content li {
+  list-style: none;
+  margin: 5px 0 13px;
+}
+.dropdown-content a {
+  float: none;
+  color: #fff;
+  padding: 12px 16px 12px 0;
+  list-style: none;
+  text-align: left;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  opacity: 0.8;
+}
+
+/* Home section */
+.home {
+  background-image: url(https://eduww.net/wp-content/uploads/2022/02/k12-online-school.jpg);
+  position: relative;
+  overflow: hidden;
+  top: -3rem;
+  min-height: 90vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.home-container {
+  max-width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 1;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.home-content:nth-child(2) {
+  padding: 20px 20px 70px;
+  z-index: 1;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+}
+.home-content__grid {
+  padding: 65px 56px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 1rem;
+}
+.home-content__title {
+  color: #0751da;
+  font-size: 2.5rem;
+  line-height: 135%;
+  text-transform: capitalize;
+  margin: 0;
+}
+.home-content__descr {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.home-content__button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  clear: both;
+  margin-bottom: 1, 7rem;
+}
+
+.home-button {
+  font-size: 1.3rem;
+  color: #fff;
+  background: #0751da;
+  border: 1px solid #0751da;
+  text-align: center;
+  padding: 1rem 3.4rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.home-button:nth-child(2) {
+  background: #fff;
+  border: 1px solid #0751da;
+  color: #0751da;
+  margin-left: 1.5rem;
+}
+
+/* Second section */
+.home-second {
+  min-height: 90vh;
+}
+.home-container__second {
+  max-width: 1370px;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 1;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.home-content__second {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 200px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+.home-second .home-content__title {
+  color: #222222;
+  font-weight: 400;
+  text-transform: none;
+  word-spacing: 12px;
+}
+.home-content__second:first-child {
+  box-sizing: border-box;
+}
+.content-grid {
+  margin: auto;
+  display: block;
+}
+.btn-light {
+  background: #e7ebf2;
+  border: 1px solid #0751da;
+  color: #0751da;
+  margin-top: 2rem;
+}
+.home-thrid {
+  min-height: 90vh;
+  background: #fff;
+}
+.home-thrid .home-content__title {
+  color: #222222;
+  font-weight: 400;
+  word-spacing: 15px;
+  text-transform: none;
+}
+.home-thrid .btn-light {
+  margin-top: 2rem;
+  color: #0751da;
+  background-color: #fff;
+}
+/* Work */
+.work-container {
+  min-height: 90vh;
+  background: #fff;
+}
+.work-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.work-logo-1 {
+  background: yellow;
+  padding: 12px;
+  border-radius: 50%;
+}
+.work-logo-2 {
+  background: #bdeffe;
+  padding: 12px;
+  border-radius: 50%;
+}
+.work-logo-3 {
+  background: #ffbdbd;
+  padding: 12px;
+  border-radius: 50%;
+}
+.work-title {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-left: 2rem;
+}
+.work-descr {
+  margin: auto;
+  width: 75%;
+}
+.work-descr p {
+  margin: 0;
+  line-height: 152%;
+  font-weight: 400;
+  opacity: 0.7;
+}
+/* Lesson-cart */
+.lesson-cart {
+  max-width: 1370px;
+  margin: auto;
+  min-height: 90vh;
+  background: #e7ebf2;
+}
+.lesson-cart__title {
+  text-transform: capitalize;
+  font-size: 2.2rem;
+  margin: 2rem 0 1rem;
+}
+.lesson-content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.lesson-items {
+  width: 50%;
+  line-height: 152%;
+}
+.lesson-items a {
+  position: absolute;
+  bottom: 1.2rem;
+  right: 2.8rem;
+  text-decoration: none;
+  border-bottom: 2px solid #0751da;
+}
+.cart {
+  margin-top: 15px;
+}
+.cart-item {
+  display: inline-block;
+  width: 30%;
+  margin-right: 3%;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a {
+  text-decoration: none;
+}
+.cart-item__image img {
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.cart-item__info {
+  padding: 0.6rem 2.4rem;
+  font-size: 0.9rem;
+  color: #222222;
+  line-height: 1.5;
+}
+.cart-item__info > h3 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.bg-icon {
+  display: inline-flex;
+  line-height: 0;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+.bg-icon svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+}
+.bg-icon span {
+  margin-left: 0.5rem;
+}
+/* Consultation */
+
+.consultation {
+  background: #ffffff;
+  margin: 10rem 0 8rem;
+  display: flex;
+}
+.consultation-items {
+  display: inline-flex;
+  min-height: 30vh;
+  padding: 200px 20px;
+  width: 1370px;
+  margin: auto;
+}
+.consultation-item {
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+  margin-right: 4rem;
+}
+.consultation-item h1 {
+  color: #0751da;
+  text-transform: capitalize;
+}
+.description {
+  line-height: 1.5;
+}
+.consultation-item:nth-child(2) {
+  margin-top: 2rem;
+}
+.consultation-item__btn {
+  width: 50%;
+  border: 1px solid #0751da;
+  font-size: 1.1rem;
+  padding: 1rem 1.8rem;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+}
+.consultation-item__btn:nth-child(2) {
+  margin-top: 2rem;
+  background: #0751da;
+}
+.consultation-item__btn:nth-child(2) a {
+  color: #fff;
+}
+
+/* Podcast */
+.podcast {
+  margin: auto;
+  min-height: 90vh;
+}
+
+.podcast-items {
+  display: inline-flex;
+  width: 1370px;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+.podcast-item {
+  width: 30%;
+  margin-right: 3%;
+  background-image: url('https://eduww.net/wp-content/uploads/2022/07/Graduation.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  transition: all 0.3s ease-in-out;
+  height: 570px;
+  position: relative;
+  border-radius: 10px;
+}
+.podcast-item:nth-child(2) {
+  background-image: url(https://eduww.net/wp-content/uploads/2022/02/Lets-talk-about-it-eduww-podcast.jpg);
+}
+.podcast-item:nth-child(3) {
+  background-image: url(https://eduww.net/wp-content/uploads/2022/05/grading-eduww.jpg);
+}
+.podcast-item::after {
+  content: '';
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(0deg, #000, rgba(0, 0, 0, 0));
+}
+.podcast-item__info {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 14px 20px 20px;
+  letter-spacing: 0.1rem;
+  z-index: 999;
+  border-radius: 10px;
+}
+.podcast-item__info p {
+  font-size: 16px;
+}
+.podcast-item__info h3 {
+  line-height: 42px;
+  font-size: 1.6rem;
+}
+
+/* Blog */
+
+.blog {
+  min-height: 90vh;
+  background: #fff;
+}
+.blog-cart {
+  max-width: 1370px;
+  padding: 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+}
+.blog .podcast-item:nth-child(1) {
+  background-image: url(https://eduww.net/wp-content/uploads/2022/07/how-to-sign-up-to-online-school.jpg);
+}
+
+.blog .podcast-item:nth-child(2) {
+  background-image: url(https://eduww.net/wp-content/uploads/2022/04/online-consultations-eduww.jpg);
+}
+.blog .podcast-item:nth-child(3) {
+  background-image: url(https://eduww.net/wp-content/uploads/2022/04/eduww-team.jpg);
+}
+
+footer {
+  min-height: 50vh;
+  background: #000;
+}
+.footer-items {
+  display: flex;
+  margin: auto;
+  padding: 6rem 0;
+  align-items: center;
+}
+.footer-item {
+  width: 50%;
+  position: relative;
+  color: #fff;
+  opacity: 0.7;
+}
+.footer-item__image {
+  margin-left: 15rem;
+}
+
+@media screen and (max-width: 1376px) {
+  .home-second {
+    padding: 20px 40px;
+  }
+  .home-cart__image img {
+    width: 400px;
+  }
+  .home-cart__image {
+    text-align: center;
+    justify-content: center;
+  }
+  .header-contact__items {
+    padding: 8px;
+    justify-content: end;
+  }
+  .header-contact__item {
+    font-size: 0.6rem;
+  }
+  .nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 0 30px;
+  }
+  .navbar-icons {
+    display: flex;
+    opacity: 0;
+    position: absolute;
+  }
+  .header-logo {
+    margin-left: 10px;
+  }
+  .nav-list__items {
+    display: flex;
+  }
+  .cart-items {
+    display: flex;
+    box-sizing: border-box;
+  }
+  .cart-item {
+    width: 33%;
+    margin-left: 1%;
+  }
+
+  .podcast-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+    gap: 20px;
+    margin: 40px 30px;
+  }
+  .podcast-item {
+    width: auto;
+  }
+  .footer {
+    width: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .footer-items {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .footer-item {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .footer-item__image {
+    margin-left: 0;
+  }
+
+  .blog-cart {
+    text-align: start;
+    padding: 30px 40px;
+  }
+  .lesson-cart {
+    padding: 30px 40px;
+  }
+  .consultation-items {
+    padding: 100px 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .header-contact__items {
+    padding: 8px;
+    justify-content: end;
+  }
+  .header-contact__item {
+    font-size: 1rem;
+  }
+  .nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  .navbar-icons {
+    color: #fff;
+  }
+  .header-logo {
+    margin-left: 10px;
+  }
+  .nav-list__items {
+    display: none;
+  }
+  .navbar-icons {
+    opacity: 1;
+    position: relative;
+    text-align: end;
+  }
+  .home-content {
+    display: flex;
+    width: 100%;
+  }
+  .home-content__second {
+    display: flex;
+    width: 100%;
+    padding: 40px 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-cart__image img {
+    width: 500px;
+  }
+  .home-cart__image {
+    text-align: center;
+    justify-content: center;
+  }
+  .consultation-items {
+    padding: 100px 80px;
+  }
+  .podcast-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+    gap: 20px;
+    margin-top: 60px;
+  }
+  .podcast-item {
+    width: auto;
+  }
+  .footer {
+    width: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .footer-items {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .footer-item {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .footer-item__image {
+    margin-left: 0;
+  }
+  .lesson-cart {
+    text-align: start;
+    padding: 30px 30px;
+    min-height: auto;
+  }
+
+  .blog-cart {
+    text-align: start;
+    padding: 30px 30px;
+  }
+  .lesson-content {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .lesson-items {
+    display: block;
+    width: 100%;
+  }
+  .lesson-items a {
+    position: absolute;
+    left: 1rem;
+    bottom: -2rem;
+  }
+  .cart-items {
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 50px;
+  }
+  .cart-item {
+    width: 33%;
+    margin: 1%;
+  }
+  .cart-item__info h3 {
+    font-size: 1.5rem;
+  }
+  .consultation-items {
+    padding: 30px 20px;
+    align-items: center;
+  }
+  .consultation-item {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .header-contact__items {
+    padding: 8px;
+    justify-content: space-between;
+  }
+  .header-contact__item {
+    font-size: 0.5rem;
+  }
+  .header-logo {
+    margin-left: 10px;
+  }
+  .nav-list__items {
+    display: none;
+  }
+  .navbar-icons {
+    opacity: 1;
+    position: relative;
+    text-align: end;
+  }
+  .home-content {
+    display: flex;
+    width: 100%;
+  }
+  .home-content__second {
+    display: flex;
+    width: 100%;
+    padding: 40px 80px;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-cart__image img {
+    width: 400px;
+  }
+  .home-cart__image {
+    text-align: center;
+    justify-content: center;
+  }
+  .lesson-cart {
+    text-align: center;
+    padding: 10px;
+  }
+  .lesson-content {
+    display: block;
+    width: 100%;
+  }
+  .lesson-items {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+  .lesson-items a {
+    position: absolute;
+    left: 1rem;
+    bottom: -2rem;
+  }
+  .cart {
+    margin: 50px 10px;
+  }
+  .cart-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    box-sizing: border-box;
+  }
+  .cart-item {
+    width: 100%;
+  }
+  .cart-item__info h3 {
+    font-size: 1.2rem;
+  }
+  .podcast-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: auto;
+  }
+  .podcast-item {
+    width: 100%;
+  }
+  .footer {
+    width: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .footer-items {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .footer-item {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .footer-item__image {
+    margin-left: 0;
+  }
+  .consultation-items {
+    min-height: 10vh;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 40px;
+  }
+}
+@media screen and (max-width: 578px) {
+  .home-content__button {
+    display: block;
+  }
+  .home-button {
+    display: block;
+    font-size: 1.1rem;
+    color: #fff;
+    background: #0751da;
+    border: 1px solid #0751da;
+    text-align: center;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .home-button:nth-child(2) {
+    background: #fff;
+    border: 1px solid #0751da;
+    color: #0751da;
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 532px) {
+  .nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .header-contact__items {
+    padding: 8px;
+    justify-content: space-between;
+  }
+  .header-contact__item {
+    font-size: 0.5rem;
+  }
+  .header-logo {
+    margin-left: 10px;
+  }
+  .nav-list__items {
+    display: none;
+  }
+  .navbar-icons {
+    opacity: 1;
+    position: relative;
+    text-align: end;
+  }
+  .home-content {
+    display: flex;
+    width: 100%;
+  }
+  .home-second {
+    padding: 10px 0px;
+  }
+  .home-content__second {
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-cart__image img {
+    width: 300px;
+  }
+  .home-cart__image {
+    text-align: center;
+    justify-content: center;
+  }
+  .consultation-items {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .consultation-item {
+    width: 100%;
+    padding: 0;
+  }
+  .podcast-items {
+    display: block;
+    width: auto;
+    margin: 40px 20px;
+    justify-content: center;
+  }
+  .podcast-item {
+    margin: 20px;
+    justify-content: center;
+    width: auto;
+  }
+  .footer {
+    width: auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .footer-items {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .footer-item {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .footer-item__image {
+    margin-left: 0;
+  }
+  .lesson-cart {
+    text-align: center;
+    padding: 10px;
+  }
+  .blog-cart {
+    text-align: center;
+    padding: 10px;
+  }
+  .lesson-content {
+    display: block;
+    width: 100%;
+  }
+  .lesson-items {
+    display: block;
+    width: 100%;
+  }
+  .lesson-items a {
+    position: absolute;
+    left: 1rem;
+    bottom: -2rem;
+  }
+  .cart-items {
+    display: block;
+  }
+  .cart-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 350px) {
+  .home-content {
+    display: flex;
+    width: 100%;
+  }
+  .home-content__second {
+    display: flex;
+    width: 100%;
+    padding: 40px 80px;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-cart__image img {
+    width: 250px;
+  }
+  .home-cart__image {
+    text-align: center;
+    justify-content: center;
+  }
+  .nav-list__items {
+    display: none;
+  }
+  .navbar-icons {
+    opacity: 1;
+    position: relative;
+    text-align: end;
+  }
+}
